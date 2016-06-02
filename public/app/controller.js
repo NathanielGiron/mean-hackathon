@@ -10,11 +10,12 @@ angular.module('appCtrls', ['appServices'])
   });
 }])
 
-.controller('UrlsCtrl', ['$scope', '$stateParams', 'Urls', function($scope, $stateParams, Urls) {
-  $scope.urls = {};
+.controller('UrlsCtrl', ['$scope', '$stateParams', 'Link', function($scope, $stateParams, Link) {
+  $scope.links = [];
 
-  Urls.get({id: $stateParams.id}, function success(data) {
-    $scope.url = data;
+
+  Link.get({}, function success(data) {
+    $scope.links = data;
   }, function error(data) {
     console.log(data);
   });
