@@ -1,4 +1,4 @@
-angular.module('appCtrls', ['appServices'])
+angular.module('hackathonApp')
 
 .controller('UrlShowCtrl', ['$scope', '$stateParams', 'Urls', function($scope, $stateParams, Urls) {
   $scope.urls = {};

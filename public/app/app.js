@@ -1,4 +1,4 @@
-angular.module('hackathonApp', ['appCtrls','ui.router'])
+angular.module('hackathonApp', ['ui.router','ngResource'])
 
 
 .config(['$stateProvider', '$urlRouterProvider', '$locationProvider', function($stateProvider, $urlRouterProvider, $locationProvider) {
