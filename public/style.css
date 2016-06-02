@@ -30,3 +30,11 @@
 .header-btn {
 	text-align: center;
 }
+.result {
+	margin: 0 auto;
+	border: solid 1px black;
+	height:200px;
+	width:500px;
+	background-color: #fff;
+	margin-top:-100px;
+}
